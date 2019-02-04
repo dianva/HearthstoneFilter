@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hearthstone Filtros Ajax</title>
+    <link rel="stylesheet" type="text/css" href="css/CSS.css">
+</head>
+
+<body>
+    <div class="filtro">
+        <table>
+            <tr>
+                    <td>
+                            <form action="" method="get">
+                                <label for="nombreCarta">Buscar por nombre: </label>
+                                <input type="text" value="Buscar por nombre" id=nombreCarta>
+                                <input type="button" value="buscar" id="buscar">
+                            </form>
+                        </td>
+            </tr>
+            <tr>
+                    <td><label for="verMejores">Los mejores esbirros:</label><input type="button" value="mostrar" id="verMejores"></td>
+ 
+            </tr>
+        </table>
+    </div>
+
+    <div class="filtro">
+        <h2>Filtrar cartas por:</h2>
+        <table>
+            <tr>
+                <td>Coste: <select name="" id="coste">
+                        <option value=""></option>
+                        <option value="0">Coste 0</option>
+                        <option value="1">Coste 1</option>
+                        <option value="2">Coste 2</option>
+                        <option value="3">Coste 3</option>
+                        <option value="4">Coste 4</option>
+                        <option value="5">Coste 5</option>
+                        <option value="6">Coste 6</option>
+                        <option value="7">Coste 7</option>
+                        <option value="8">Coste 8</option>
+                        <option value="9">Coste 9</option>
+                        <option value="10">Coste 10</option>
+                        <option value="11">Mas de 10</option>
+                    </select></td>
+                <td>Rareza: <select name="" id="rareza">
+                        <option value=""></option>
+                        <option value="COMMON">Comun</option>
+                        <option value="RARE">Poco comun</option>
+                        <option value="EPIC">Epica</option>
+                        <option value="LEGENDARY">Legendaria</option>
+                    </select></td>
+                <td>Clase: <select name="" id="clase">
+                        <option value=""></option>
+                        <option value="NEUTRAL">Neutral</option>
+                        <option value="DRUID">Druida</option>
+                        <option value="HUNTER">Cazador</option>
+                        <option value="MAGE">Mago</option>
+                        <option value="PALADIN">Paladin</option>
+                        <option value="PRIEST">Sacerdote</option>
+                        <option value="ROGUE">Pícaro</option>
+                        <option value="SHAMAN">Chamán</option>
+                        <option value="WARLOCK">Brujo</option>
+                        <option value="WARRIOR">Guerrero</option>
+                    </select></td>
+                <td>Tipo: <select name="" id="tipo">
+                        <option value=""></option>
+                        <option value="MINION">Esbirro</option>
+                        <option value="WEAPON">Arma</option>
+                        <option value="SPELL">Hechizo</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td colspan="4" id="buscarFiltro">Filtro</td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="contenedor">
+
+    </div>
+    <script src="http://localhost/hearthstone/programa.js">
+
+    </script>
+
+</body>
+
+</html>
